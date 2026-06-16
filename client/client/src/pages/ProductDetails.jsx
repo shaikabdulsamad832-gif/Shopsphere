@@ -9,7 +9,7 @@ function ProductDetails() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/api/products")
+      .get("https://shopsphere-backend-zlug.onrender.com/api/products")
       .then((res) => {
         const selectedProduct = res.data.find((item) => item._id === id);
         setProduct(selectedProduct);

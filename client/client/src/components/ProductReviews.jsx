@@ -24,7 +24,7 @@ function ProductReviews({ product, setProduct }) {
 
     try {
       const res = await axios.post(
-        `http://localhost:5000/api/products/${product._id}/reviews`,
+        `https://shopsphere-backend-zlug.onrender.com/api/products/${product._id}/reviews`,
         {
           name,
           rating,

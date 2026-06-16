@@ -28,7 +28,7 @@ function Register() {
     }
 
     try {
-      const res = await axios.post("http://localhost:5000/api/users/register", {
+      const res = await axios.post("https://shopsphere-backend-zlug.onrender.com/api/users/register", {
         name: form.name,
         email: form.email,
         password: form.password,

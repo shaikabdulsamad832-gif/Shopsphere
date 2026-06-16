@@ -16,7 +16,7 @@ function AdminProducts() {
 
   const fetchProducts = () => {
     axios
-      .get("http://localhost:5000/api/products")
+      .get("https://shopsphere-backend-zlug.onrender.com/api/products")
       .then((res) => setProducts(res.data))
       .catch((err) => console.log(err));
   };
@@ -57,13 +57,13 @@ function AdminProducts() {
     try {
       if (editingId) {
         await axios.put(
-          `http://localhost:5000/api/products/${editingId}`,
+          `https://shopsphere-backend-zlug.onrender.com/api/products/${editingId}`,
           productData
         );
 
         alert("Product updated successfully");
       } else {
-        await axios.post("http://localhost:5000/api/products", productData);
+        await axios.post("https://shopsphere-backend-zlug.onrender.com/api/products", productData);
 
         alert("Product added successfully");
       }
@@ -98,7 +98,7 @@ function AdminProducts() {
     if (!confirmDelete) return;
 
     try {
-      await axios.delete(`http://localhost:5000/api/products/${id}`);
+      await axios.delete(`https://shopsphere-backend-zlug.onrender.com/api/products/${id}`);
 
       alert("Product deleted successfully");
       fetchProducts();

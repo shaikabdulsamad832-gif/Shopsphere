@@ -84,7 +84,7 @@ function Checkout() {
 
     try {
       const { data } = await axios.post(
-        "http://localhost:5000/api/payment/create-order",
+        "https://shopsphere-backend-zlug.onrender.com/api/payment/create-order",
         { amount: finalTotal }
       );
 
