@@ -1,7 +1,13 @@
 # ShopSphere 🛒
 
 A full-stack MERN E-Commerce Platform built using MongoDB, Express.js, React.js, and Node.js.
+## Live Links
 
+Frontend: https://shopsphere-beta-eight.vercel.app
+
+Backend: https://shopsphere-backend-zlug.onrender.com
+
+GitHub: https://github.com/shaikabdulsamad832-gif/Shopsphere
 ## Features
 
 ### User Features
